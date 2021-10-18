@@ -1,0 +1,47 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.login
+    .container
+      form.login__panel
+        .login__head Войти
+        .login__body
+          .login__tabs-list
+            .login__tabs-item Электронная почта
+            .login__tabs-item.active Номер телефона
+          .tabs 
+            .tab
+              .inputs
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+                .input
+                  input(type="password")
+                  .input__placeholder 
+                    | Пароль
+                    span *
+                .login__events 
+                  +checkbox('Запомнить меня')
+                  a.login__link Я забыл свой пароль
+                button.sumbit.btn Войти
+            .tab.active
+              .sms__message 
+                | Мы отправили вам код в SMS на номер:<br> 
+                span +79678676799
+              .inputs
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Введите код из SMS
+                button.sumbit.btn Войти
+              .sms__timer Отправить код повторно через 59 сек.
+              .sms__link 
+                a(href="#") Получить новый код 
+        .login__bottom
+          span Нет аккаунта?
+          a(href="#") Зарегистрироваться

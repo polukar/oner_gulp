@@ -1,0 +1,130 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.basket
+    .container
+      .title 
+        h1 Оформление заказа
+      .basket__wrap 
+        .basket__left
+          form.basket-form
+            .basket-form__block
+              .basket-from__tabs
+                a.basket-form__tab.active(href="basket-from.html") Физическое лицо
+                a.basket-form__tab(href="basket-from_2.html") Юридическое лицо
+            .basket-form__block
+              .title 
+                h2 Данные получателя
+              .inputs 
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Фамилия и имя 
+                    span *
+                .input.checked
+                  input.js-mask__tel(type="text")
+                  .input__placeholder 
+                    | Телефон
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+            .basket-form__block
+              .title 
+                h2 Способ доставки
+              .radios
+                label.input-radio
+                  input(type="radio" checked name="delivery")
+                  .radio__circle
+                  .radio__info 
+                    .radio__title Курьерская доставка
+                    .radio__text СДЭК, Boxberry, Деловые Линии  <br>— от 349 руб.
+                label.input-radio
+                  input(type="radio" name="delivery")
+                  .radio__circle
+                  .radio__info 
+                    .radio__title Самовывоз из магазина
+                    .radio__text C29.04.2021 (четверг) <br>— бесплатно
+                label.input-radio
+                  input(type="radio" name="delivery")
+                  .radio__circle
+                  .radio__info 
+                    .radio__title Самовывоз из пункта выдачи
+                    .radio__text СДЭК, Boxberry <br>— от 0 руб.
+            .basket-form__block
+              .title 
+                h2 Адрес получателя
+              .inputs 
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Город
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Улица
+                .inputs--3
+                  .input
+                    input(type="text")
+                    .input__placeholder 
+                      | Дом
+                  .input
+                    input(type="text")
+                    .input__placeholder 
+                      | Корпус
+                  .input
+                    input(type="text")
+                    .input__placeholder 
+                      | Квартира
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Комментарии к доставке
+            .basket-form__block
+              .title 
+                h2 Способ оплаты
+              .radios-pays 
+                label.radio-pay
+                  input(type="radio" name="pay")
+                  .radio-pay__panel
+                    .radio__circle
+                    .radio-pay__ico
+                      +svgsprite('pay_1')
+                    .radio-pay__text Оплата картой
+                label.radio-pay
+                  input(type="radio" name="pay")
+                  .radio-pay__panel
+                    .radio__circle
+                    .radio-pay__ico
+                      +svgsprite('pay_2')
+                    .radio-pay__text Безналичная оплата по счету
+                label.radio-pay
+                  input(type="radio" name="pay")
+                  .radio-pay__panel
+                    .radio__circle
+                    .radio-pay__ico
+                      +svgsprite('pay_3')
+                    .radio-pay__text Оплата курьеру
+        .basket__right
+          .basket__panel
+            .basket__panel-head Ваш заказ
+            .basket__panel-body
+              .basket__panel-title 
+                span Товары
+                span 6
+              .promocode
+                input.promocode__input(type="text")
+                .input__placeholder Промокод
+                button.promocode__btn 
+                  +svgsprite('promocode-arrow')
+            .basket__panel-bottom 
+              .basket__panel-title
+                span Итого
+                span.price-all 23 870 ₽
+              button.btn.--purple Оформление заказа
+              .basket__panel-description Цена зависит от типа клиента. После регистрации возможна ее корректировка.

@@ -1,0 +1,206 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.catalog-page.section
+    .container
+      +crumbs('Каталоги оригинальных запчастей', 'Audi', 'Поиск по параметрам Audi', 'Запчасти Audi Q5', 'Шайба пламягасящая форсунки дизельной ')
+      .title 
+        h1 BOSCH <span>F 00V P01 008</span>
+        p Шайба пламягасящая форсунки дизельной AUDI Q7 4M/4L 3.0/6.0 TDI 06-, TOUAREG 7P5
+      .catalog-page__block
+        .title.-m-10
+          h2 Запрашиваемый номер
+          a.map__link 
+            +svgsprite('location')
+            span Выбрать пункт выдачи заказов на карте
+        .catalog-page__table 
+          .catalog-page__scroll
+            .catalog-page__head 
+              .catalog-page__item.--size_1 Производитель и номер
+              .catalog-page__item.--size_2 
+                | Описание
+                +svgsprite('filter')
+              .catalog-page__item.--size_3
+                | Наличие
+                +svgsprite('filter')
+              .catalog-page__item.--size_4
+                | Срок
+                +svgsprite('filter')
+              .catalog-page__item.--size_5
+                | Цена
+                +svgsprite('filter')
+            .catalog-page__head-gray
+              .catalog-page__item.--size_1 BMW
+              .catalog-page__item.--size_2 Надежный поставщик
+            .catalog__body
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                  a.catalog-page__number.--provider-open(href="#")  33208609838
+                  .catalog-page__raiting
+                    +svgsprite('star')
+                    .catalog-page__raiting-number.tooltip
+                      | 4/5
+                      .tooltip__panel Рейтинг продаж
+                .catalog-page__item.--size_2 Прокладка, крышка головки цилиндра
+                .catalog-page__item.--size_3
+                  .diller.tooltip
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                .catalog-page__item.--size_2 Прокладка, крышка головки цилиндра
+                .catalog-page__item.--size_3
+                  .diller.tooltip.--diller-hidden
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                .catalog-page__item.--size_2 Кольцо уплотнительное кл.крышки
+                .catalog-page__item.--size_3
+                  .diller.tooltip.--diller-hidden
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-bottom 
+                .catalog-page__item.--size_1
+                .catalog-page__item.--size_2
+                  a.catalog-page__all(href="#") 
+                    | Еще 9 предложений
+                    +svgsprite('arrow-down-purple')
+                .catalog-page__item.--size_3
+                .catalog-page__item.--size_4
+                  .catalog-page__all-day от 1 дн
+                .catalog-page__item.--size_5
+                  .catalog-page__all-summ от 52 560 ₽
+      .catalog-page__block
+        .title.-m-10
+          h2 Аналоги для номера
+          a.map__link 
+            +svgsprite('location')
+            span Выбрать пункт выдачи заказов на карте
+        .catalog-page__table
+          .catalog-page__scroll 
+            .catalog-page__head 
+              .catalog-page__item.--size_1 Производитель и номер
+              .catalog-page__item.--size_2 
+                | Описание
+                +svgsprite('filter')
+              .catalog-page__item.--size_3
+                | Наличие
+                +svgsprite('filter')
+              .catalog-page__item.--size_4
+                | Срок
+                +svgsprite('filter')
+              .catalog-page__item.--size_5
+                | Цена
+                +svgsprite('filter')
+            .catalog-page__head-gray
+              .catalog-page__item.--size_1 BMW
+              .catalog-page__item.--size_2 Надежный поставщик
+            .catalog__body
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                  a.catalog-page__number(href="#")  33208609838
+                  .catalog-page__raiting
+                    +svgsprite('star')
+                    .catalog-page__raiting-number.tooltip
+                      | 4/5
+                      .tooltip__panel Рейтинг продаж
+                .catalog-page__item.--size_2 Прокладка, крышка головки цилиндра
+                .catalog-page__item.--size_3
+                  .diller.tooltip
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                .catalog-page__item.--size_2 Прокладка, крышка головки цилиндра
+                .catalog-page__item.--size_3
+                  .diller.tooltip.--diller-hidden
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-tr 
+                .catalog-page__item.--flex.--jcsb.--size_1
+                .catalog-page__item.--size_2 Кольцо уплотнительное кл.крышки
+                .catalog-page__item.--size_3
+                  .diller.tooltip.--diller-hidden
+                    +svgsprite('diller')
+                    .tooltip__panel Дилер
+                  | 1 шт.
+                .catalog-page__item.--size_4
+                  .catalog-page__days 
+                    | 1 дн.
+                    +svgsprite('days')
+                .catalog-page__item.--flex.--jcfe.--size_5
+                  .catalog-page-summ 56 564 ₽
+                  .catalog-page-counts
+                    +count
+                  button.catalog-page-basket
+                    +svgsprite('basket_2')
+              .catalog__body-bottom 
+                .catalog-page__item.--size_1
+                .catalog-page__item.--size_2
+                  a.catalog-page__all(href="#") 
+                    | Еще 9 предложений
+                    +svgsprite('arrow-down-purple')
+                .catalog-page__item.--size_3
+                .catalog-page__item.--size_4
+                  .catalog-page__all-day от 1 дн
+                .catalog-page__item.--size_5
+                  .catalog-page__all-summ от 52 560 ₽

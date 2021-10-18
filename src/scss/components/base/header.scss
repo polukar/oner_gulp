@@ -1,0 +1,274 @@
+.header{
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(44, 41, 51, 0.1);
+  margin-bottom: 30px;
+}
+
+.header__top{
+  padding: 13px 0;
+  border-bottom: 1px solid $border;
+}
+
+.header__bottom{
+  padding: 13px 0;
+}
+
+.header__list{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__item{
+  display: flex;
+  align-items: center;
+  &:not(:first-child){
+    margin-left: 50px;
+  }
+  b{
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.header__ico{
+  margin-right: 10px;
+}
+
+.header__search{
+  width: 430px;
+}
+
+.all-categories{
+  height: 44px;
+  border-radius: 8px;
+  background-color: #6B59CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 178px;
+  color: #fff;
+  padding-top: 3px;
+  transition: .4s;
+  &:hover,
+  &.active{
+    background-color: #5946D7;
+  }
+  svg{
+    margin-right: 10px;
+    transform: translateY(-2px);
+  }
+}
+
+.nav{
+  display: flex;
+  &__link{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: transparent;
+    line-height: 1;
+    transition: .4s;
+    margin-right: 5px;
+    padding-top: 3px;
+    &:hover,
+    &.active{
+      background-color: #F4F5F7;
+    }
+  }
+}
+
+.btn-basket{
+  display: flex;
+  padding-left: 25px;
+  padding-right: 15px;
+  line-height: 1;
+  align-items: center;
+  background: #F4F5F7;
+  border-radius: 8px;
+  height: 44px;
+  svg{
+    margin-right: 15px;
+  }
+}
+
+.btn-basket__numbers{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FB6019;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4px;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+.--visible-mobile{
+  display: none;
+}
+
+.--visible-tablet{
+  display: none;
+}
+
+
+@media(max-width: 1300px){
+  .header__item:not(:first-child){
+    margin-left: 15px;
+  }
+  .nav__link{
+    margin-right: 0px;
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 1200px){
+  .--remove-tablet{
+    display: none;
+  }
+  
+  .--visible-tablet{
+    display: flex;
+  }
+  
+  .nav{
+    width: calc(100% - 158px - 127px);
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .btn-basket{
+    background-color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nav__link{
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header__text{
+    display: none;
+  }
+  .header__search{
+    width: calc(100% - 158px - 132px);
+    padding-left: 15px;
+    .search{
+      max-width: 390px;
+    }
+  }
+  .header__logo{
+    width: 158px;
+  }
+  .header__item:not(:first-child){
+    margin-left: 15px;
+  }
+  .header{
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .header__item:not(:first-child){
+    margin-left: 20px;
+  }
+  .btn-basket{
+    margin-right: 5px;
+  }
+  .menu__panel {
+    top: 138px;
+  }
+  .--remove-mobile{
+    display: none;
+  }
+  .--visible-mobile{
+    display: flex;
+  }
+
+  .btn-basket__numbers{
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .all-categories{
+    font-size: 0px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+      margin: 0;
+    }
+  }
+
+  .svgsprite._menu{
+    width: 24px;
+    height: 24px;
+    transform: translateY(0px);
+  }
+
+  .header__search{
+    width: calc(100% - 54px);
+  }
+
+  .header__search .search{
+    max-width: 100%;
+  }
+
+  .btn-basket svg{
+    margin-right: 0px;
+  }
+
+  .header__ico{
+    margin-right: 0px;
+  }
+
+  .header__logo{
+    display: flex;
+    img{
+      max-width: 119px;
+    }
+  }
+  .burger{
+    margin-right: 15px;
+  }
+
+  .header{
+    .svgsprite._basket_2{
+      width: 20px;
+    }
+  }
+
+  .search__input{
+    height: 44px;
+  }
+
+  .search__btn{
+    width: 34px;
+    height: 34px;
+  }
+
+  .search__input{
+    padding-right: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header__search{
+    padding-left: 0px;
+  }
+}

@@ -1,0 +1,55 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.basket
+    .container
+      .title 
+        h1 Корзина
+      .basket__wrap 
+        .basket__left
+          .basket__cards 
+            .basket__head
+              .basket__checkbox-select 
+                +checkbox('Отметить/снять все товары')
+              .basket__delete-select 
+                | Удалить отмеченные
+                +svgsprite('delete')
+            .basket__body 
+              .basket__card 
+                .basket__checkbox
+                  +checkbox()
+                .basket__pic
+                  img(src="./assets/img/card/1.png", alt="")
+                .basket__info 
+                  .basket__brand Genesis
+                  .basket__name Масло Genesis SUPER 3000 X1 5W-40, 1 л. 
+                  .basket__article Артикул: 0092S40240
+                .basket__group
+                  .basket__days 5 дней
+                  .basket__count 
+                    +count()
+                    .basket__count-description 1 шт = 2 060 ₽
+                  .basket__card-price 2 060 ₽
+                .basket__card-delete 
+                  +svgsprite('delete')
+        .basket__right
+          .basket__panel
+            .basket__panel-head Ваш заказ
+            .basket__panel-body
+              .basket__panel-title 
+                span Товары
+                span 6
+              .promocode
+                input.promocode__input(type="text")
+                .input__placeholder Промокод
+                button.promocode__btn 
+                  +svgsprite('promocode-arrow')
+            .basket__panel-bottom 
+              .basket__panel-title
+                span Итого
+                span.price-all 23 870 ₽
+              button.btn.--purple Оформление заказа
+              .basket__panel-description Цена зависит от типа клиента. После регистрации возможна ее корректировка.

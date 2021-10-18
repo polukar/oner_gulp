@@ -1,0 +1,143 @@
+.popup-provider{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  display: none;
+}
+
+.popup-provider__bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #1B1D1F;
+  opacity: .5;
+}
+
+.popup-provider__panel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: calc(100% - 20px);
+  max-width: 450px;
+  border: 1px solid #E3E3E8;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.popup-provider__head{
+  height: 52px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E3E3E8;
+}
+
+.popup-provider__body{
+  padding: 20px;
+}
+
+.popup-provider__list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup-provider__description{
+  font-weight: 500;
+}
+
+.popup-provider__grey-description{
+  color: #7A7680;
+}
+
+.popup-provider__stats {
+  padding: 20px 30px;
+  background-color: #F4F5F7;
+  border: 1px solid #F4F5F7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.popup-provider__checked{
+  display: flex;
+  align-items: center;
+}
+
+.popup-provider__backs{
+  display: flex;
+  align-items: center;
+}
+
+.popup-provider__circle{
+  width: 62px;
+  height: 62px;
+  position: relative;
+  margin-right: 15px;
+  svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.popup-provider__circle-text{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.popup-provider__checked-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+.popup-provider__info{
+  .popup-provider__description{
+    margin-bottom: 10px;
+  }
+}
+
+
+@media(max-width: 450px){
+  .popup-provider__list{
+    display: block;
+  }
+  .popup-provider__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .popup-provider__stats{
+    display: block;
+  }
+  .popup-provider__checked{
+    margin-bottom: 20px;
+  }
+}

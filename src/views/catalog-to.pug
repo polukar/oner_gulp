@@ -1,0 +1,64 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.section
+    .container 
+      +crumbs('Каталоги оригинальных запчастей', 'Audi', 'Поиск по параметрам Audi', 'Запчасти Audi Q5', 'Шайба пламягасящая форсунки дизельной ')
+      .title 
+        h1 Каталог запчастей для ТО
+  section.section
+    .container 
+      .catalogs-to
+        .catalogs-to__list.--flex
+          .catalogs-to__item
+            +selectCatalog('Acura')
+            +selectCatalog('Audi')
+            +selectCatalog('BMW')
+            +selectCatalog('Cadillac')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+          .catalogs-to__item
+            +selectCatalog('Geely')
+            +selectCatalog('Great Wall')
+            +selectCatalog('Honda')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+          .catalogs-to__item
+            +selectCatalog('Lincoln')
+            +selectCatalog('Mazda')
+            +selectCatalog('Mercedes')
+            +selectCatalog('Mercury')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+          .catalogs-to__item
+            +selectCatalog('Saab')
+            +selectCatalog('Saturn')
+            +selectCatalog('Seat')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+            +selectCatalog('Acura')
+      

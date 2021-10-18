@@ -1,0 +1,161 @@
+mixin svgsprite(name)
+  svg(class="svgsprite _" + name)&attributes(attributes)
+    use(xlink:href="assets/img/sprites/svgsprites.svg#" + name)
+    
+mixin search(placeholder)
+  .search
+    input.search__input(type="text" placeholder=placeholder)
+    button.search__btn&attributes(attributes) 
+      +svgsprite('search')
+
+mixin slider-next(className)
+  .slider-next(class=className)
+    +svgsprite('slider-next')
+
+mixin slider-prev(className)
+  .slider-prev(class=className)
+    +svgsprite('slider-prev')
+
+mixin main-catalog(ico, name, description, link)
+  a.main-catalogs__item(href=link)  
+    .main-catalogs__ico
+      +svgsprite(ico)
+    .main-catalogs__info
+      .main-catalogs__name=name
+      .main-catalogs__description=description
+
+mixin stars 
+  .stars 
+    .star.active
+      +svgsprite('star')
+    .star.active
+      +svgsprite('star')
+    .star.active
+      +svgsprite('star')
+    .star.active
+      +svgsprite('star')
+    .star
+      +svgsprite('star')
+
+mixin recomendation-cart(srcLink)
+  a.rec-cart(href="#") 
+    .rec-cart__img
+      img(src=srcLink, alt="")
+    .rec-cart__top.--flex.--jcsb.--aicn
+      .arcticle
+        | Артикул: 
+        span 153789
+      .rating 
+        .rating__stars
+          +stars()
+        .rating__number 4.0 
+        .rating__summ (51)
+    .rec-cart__title Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.
+    .rec-cart__bottom.--flex.--jcsb.--aicn
+      .rec-cart__price 
+        .rec-cart__new-price 2 334 ₽
+        .rec-cart__last-price 2 864 ₽
+      button.basket-in
+        +svgsprite('basket-card')
+
+mixin group-cart(title, btnText, link)
+  .group-cart&attributes(attributes) 
+    .group-cart__title=title
+    a.btn.--purple.--arrow(href=link) 
+      .btn__text=btnText
+      +svgsprite('arrow-white') 
+
+mixin crumbs(...items)
+  .crumbs 
+    each item in items
+      a.crumbs__link(href="#")
+        span=item
+        +svgsprite('crumb-arrow') 
+
+mixin count 
+  .count 
+    .count__minus
+      +svgsprite('minus')
+    input.count__input(type="text" value="0" disabled)
+    .count__plus
+      +svgsprite('plus')
+
+mixin tag(name)
+  .tag=name
+
+mixin selectCatalog(name)
+  .select-catalog.select
+    .select__main.select-catalog__main=name
+    .select__drop.select-catalog__drop
+      .select__item
+        p 
+          a(href="#")  Emgrand EC7 RV хэтчбек 2011 
+          | - наст. время
+      .select__item
+        p 
+          a(href="#")  MK Cross 2010 
+          | - наст. время
+      .select__item
+        p 
+          a(href="#")  MK хэтчбек 2008 
+          | - наст. время
+      .select__item
+        p 
+          a(href="#")  Otaka/CK седан 2005 
+          | - наст. время
+mixin select(name)
+  .select
+    .select__main=name
+    .select__drop
+      .select__item
+        p 123
+      .select__item
+        p 123
+      .select__item
+        p 123
+      .select__item
+        p 123
+
+mixin card
+  a.card(href="#")  
+    .card__pic
+      img(src="./assets/img/card/1.png", alt="")
+    .card__name Bosh
+    .card__description Батарея аккумуляторная "S4 Silver", 12в 60а/ч
+    .card__article
+      | Артикул: 
+      span 0092S40240
+    .card__btn Цены от 12 739 ₽
+    .card__info
+      .card__info-item
+        .card__info-name Напряжение, B:&nbsp;
+        .card__info-value 12
+      .card__info-item
+        .card__info-name Емкость батареи, B:&nbsp;
+        .card__info-value 60
+      .card__info-item
+        .card__info-name Расположение полюсных выводов, B:&nbsp;
+        .card__info-value 0 (обратная)
+      .card__info-item
+        .card__info-name Клеммы, B:&nbsp;
+        .card__info-value 1
+
+mixin checkbox(text, greyText)
+  label.checkbox
+    input(type="checkbox")
+    .checkbox__ico 
+    span=text
+    |&nbsp;
+    span.grey=greyText
+
+mixin bloger 
+  .bloger
+    a.bloger__link(href="#") 
+      +svgsprite('slider-prev')
+    a.bloger__link(href="#") 1
+    a.bloger__link(href="#") 2
+    a.bloger__link(href="#") 3
+    a.bloger__link(href="#") ...
+    a.bloger__link(href="#") 10
+    a.bloger__link(href="#") 
+      +svgsprite('slider-next')

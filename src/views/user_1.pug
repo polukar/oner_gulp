@@ -1,0 +1,122 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.login
+    .container
+      form.login__panel
+        .login__head Регистрация
+        .login__body
+          .login__radios 
+            label.radio
+              input(type="radio" name="reg" checked)
+              .radio__circle
+              .radio__text Физ. лицо
+            label.radio
+              input(type="radio" name="reg")
+              .radio__circle
+              .radio__text ООО
+            label.radio
+              input(type="radio" name="reg")
+              .radio__circle
+              .radio__text ИП
+          .tabs 
+            .tab.active
+              .inputs 
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Фамилия и имя 
+                    span *
+                .input.checked
+                  input.js-mask__tel(type="text")
+                  .input__placeholder 
+                    | Телефон
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+              button.sumbit.btn Зарегистрироваться
+            .tab
+              .inputs
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Фамилия и имя 
+                    span *
+                .input.checked
+                  input.js-mask__tel(type="text")
+                  .input__placeholder 
+                    | Телефон
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | ИНН
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Р/сч
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | БИК
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | ОГРН
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Юридический адрес
+                button.sumbit.btn Зарегистрироваться
+            .tab
+              .inputs
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Фамилия и имя 
+                    span *
+                .input.checked
+                  input.js-mask__tel(type="text")
+                  .input__placeholder 
+                    | Телефон
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | ИНН
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Р/сч
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | БИК
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | ОГРН
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Юридический адрес
+                button.sumbit.btn Зарегистрироваться
+        .login__bottom
+          span Есть аккаунт?
+          a(href="#") Войти

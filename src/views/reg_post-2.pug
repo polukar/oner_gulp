@@ -1,0 +1,75 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.registration
+    .container
+      form.reg_panel
+        .reg__steps
+          .reg__steps-list
+            .reg__steps-item.checked
+              .reg__circle 1
+              | Персональная информация
+            .reg__steps-item.active
+              .reg__circle 2
+              | Данные компании
+            .reg__steps-item 
+              .reg__circle 3
+              | Данные о поставщике
+            .reg__steps-item 
+              .reg__circle 4
+              | Типы доставки
+            .reg__steps-item 
+              .reg__circle 5
+              | Магазины
+            .reg__steps-item 
+              .reg__circle 6
+              | Информация о прайс-листах
+            .reg__steps-item 
+              .reg__circle 7
+              | Заключительное положение
+        .reg__step
+          .reg__step-body
+            .reg__step-top
+              .title.reg__step-title
+                h2 Данные компании
+                .reg__step-numbers Шаг 2 из 7
+            .radios 
+              label.radio
+                input(type="radio" name="reg" checked)
+                .radio__circle
+                .radio__text ООО
+              label.radio
+                input(type="radio" name="reg" checked)
+                .radio__circle
+                .radio__text ИП
+            .inputs 
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | ИНН
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | ОГРН
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | БИК
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Р/сч
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Юридический адрес
+          .reg__step-bottom
+            a.reg__step-prev(href="reg_post-1.html") 
+              +svgsprite('slider-prev')
+              | Назад
+            a.reg__step-next(href="reg_post-3.html") 
+              | Далее
+              +svgsprite('slider-next')

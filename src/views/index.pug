@@ -1,0 +1,128 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.big-slider 
+    .container
+      .main-slider 
+        .swiper-wrapper
+          .swiper-slide 
+            a.main-slider__slide(href="catalog.html") 
+              .main-slider__left
+                h1.main-slider__title
+                  | Оригинальные автозапчасти cо скидкой 
+                  span 15%
+                p.main-slider__text Акция действует с 1 по 30 июня 2021
+              .main-slider__right
+                .main-slider__pic 
+                  img(src="./assets/img/main/slider-pic.png", alt="")
+          .swiper-slide 
+            a.main-slider__slide(href="catalog.html") 
+              .main-slider__left
+                h1.main-slider__title
+                  | Оригинальные автозапчасти cо скидкой 
+                  span 15%
+                p.main-slider__text Акция действует с 1 по 30 июня 2021
+              .main-slider__right
+                .main-slider__pic 
+                  img(src="./assets/img/main/slider-pic.png", alt="")
+          .swiper-slide 
+            a.main-slider__slide(href="catalog.html") 
+              .main-slider__left
+                h1.main-slider__title
+                  | Оригинальные автозапчасти cо скидкой 
+                  span 15%
+                p.main-slider__text Акция действует с 1 по 30 июня 2021
+              .main-slider__right
+                .main-slider__pic 
+                  img(src="./assets/img/main/slider-pic.png", alt="")
+        .swiper-pagination
+      +slider-next('main-slider-next')
+      +slider-prev('main-slider-prev')
+  section.main-catalogs 
+    .container 
+      .main-catalogs__list 
+        +main-catalog('catalog-1', 'Оригинальные запчасти', '730 товаров', 'catalog.html')
+        +main-catalog('catalog-2', 'Неоригинальные запчасти', '730 товаров')
+        +main-catalog('catalog-3', 'Запчасти ВАЗ, ГАЗ, КАМАЗ', '730 товаров')
+        +main-catalog('catalog-4', 'Кузовные запчасти', '730 товаров')
+        +main-catalog('catalog-5', 'Запчасти для ТО', '730 товаров')
+        +main-catalog('catalog-6', 'Автостёкла', '730 товаров')
+        +main-catalog('catalog-7', 'Автомасла', '730 товаров')
+        +main-catalog('catalog-8', 'Автохимия', '730 товаров')
+        +main-catalog('catalog-9', 'Диски', '730 товаров')
+        +main-catalog('catalog-10', 'Аккумуляторы', '730 товаров')
+        +main-catalog('catalog-11', 'Автолампы', '730 товаров')
+        a.main-catalog__provider(href="#") 
+          .main-catalogs__ico
+            +svgsprite('provider-catalog')
+          .main-catalogs__name Поставщикам
+          .main-catalogs__arrow
+            +svgsprite('arrow-white')
+  section.recomendation 
+    .container
+      .title 
+        h2 Автомасла
+        button.btn.--gray.--arrow
+          .btn__text Все автомасла
+          +svgsprite('btn-arrow')
+      .recomendation-slider 
+        .swiper-wrapper 
+          .swiper-slide 
+            a.rec-banner(href="#") 
+              .rec-banner__title Автомасла №1 <br>от официальных <br>дилеров
+          .swiper-slide
+            +recomendation-cart('./assets/img/catalog/1.png')
+          .swiper-slide
+            +recomendation-cart('./assets/img/catalog/2.png')
+          .swiper-slide
+            +recomendation-cart('./assets/img/catalog/3.png')
+  section.recomendation 
+    .container
+      .catalog-link-slider 
+        .swiper-wrapper 
+          .swiper-slide 
+            +group-cart('Моторные масла Genesis', 'Перейти', '#')(style="background-image: url(./assets/img/catalog/group-1.png)")
+          .swiper-slide 
+            +group-cart('Шины зимние дешевле', 'Выбрать', '#')(style="background-image: url(./assets/img/catalog/group-2.png)")
+          .swiper-slide 
+            +group-cart('Запчасти для ТО', 'Смотреть', '#')(style="background-image: url(./assets/img/catalog/group-3.png)")
+  section.recomendation 
+    .container
+      .title 
+        h2 Рекомендуем
+      .slider-wrap#slider-1
+        .recomendation-slider-loop
+          .swiper-wrapper 
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/4.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/1.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/2.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/3.png')
+        +slider-next('recomendation-slider-next')
+        +slider-prev('recomendation-slider-prev')
+  section.recomendation 
+    .container
+      .title 
+        h2 Рекомендуем
+      .slider-wrap#slider-2
+        .recomendation-slider-loop
+          .swiper-wrapper 
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/4.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/1.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/2.png')
+            .swiper-slide
+              +recomendation-cart('./assets/img/catalog/3.png')
+        +slider-next('recomendation-slider-next')
+        +slider-prev('recomendation-slider-prev')
+
+
+            

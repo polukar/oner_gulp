@@ -1,0 +1,24 @@
+.accardeon__main{
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  &.active:after{
+    transform: translateY(-50%) rotate(180deg);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    width: 24px;
+    height: 24px;
+    background: url(../img/form/arrow.svg) no-repeat center / contain;
+    transition: .4s;
+  }
+}
+
+.accardeon__content{
+  display: none;
+  padding-top: 20px;
+}

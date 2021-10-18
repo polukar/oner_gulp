@@ -1,0 +1,69 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.registration
+    .container
+      form.reg_panel
+        .reg__steps
+          .reg__steps-list
+            .reg__steps-item.checked
+              .reg__circle 1
+              | Персональная информация
+            .reg__steps-item.checked
+              .reg__circle 2
+              | Данные компании
+            .reg__steps-item.checked
+              .reg__circle 3
+              | Данные о поставщике
+            .reg__steps-item.active
+              .reg__circle 4
+              | Типы доставки
+            .reg__steps-item 
+              .reg__circle 5
+              | Магазины
+            .reg__steps-item 
+              .reg__circle 6
+              | Информация о прайс-листах
+            .reg__steps-item 
+              .reg__circle 7
+              | Заключительное положение
+        .reg__step
+          .reg__step-body
+            .reg__step-top
+              .title.reg__step-title
+                h2 Типы доставки
+                .reg__step-numbers Шаг 4 из 7
+            .reg__step-block
+              .title  
+                h3 Курьерская доставка
+              .radios 
+                label.radio
+                  input(type="radio" name="reg" checked)
+                  .radio__circle
+                  .radio__text Доставляет oner
+                label.radio
+                  input(type="radio" name="reg" checked)
+                  .radio__circle
+                  .radio__text Доставляем сами
+            .reg__step-block
+              .title  
+                h3 Самовывоз из магазина
+              .radios 
+                label.radio
+                  input(type="radio" name="reg" checked)
+                  .radio__circle
+                  .radio__text Доступен
+                label.radio
+                  input(type="radio" name="reg" checked)
+                  .radio__circle
+                  .radio__text Не доступен
+          .reg__step-bottom
+            a.reg__step-prev(href="reg_post-3.html") 
+              +svgsprite('slider-prev')
+              | Назад
+            a.reg__step-next(href="reg_post-5.html") 
+              | Далее
+              +svgsprite('slider-next')

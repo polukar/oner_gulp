@@ -1,0 +1,147 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.catalog-search.section
+    .container 
+      .title 
+        h2 Каталоги оригинальных запчастей
+      .catalog-search__list 
+        .catalog-search__item
+          .catalog-search__name Поиск модели по VIN-номеру:
+          +search('Введите VIN')(class="--hover")
+          .catalog-search__code 
+            | Например: 
+            span WAUBH54B11N111054
+        .catalog-search__item
+          .catalog-search__name Поиск модели по коду/номеру кузова:
+          +search('Введите код/номер кузова')(class="--hover")
+          .catalog-search__code 
+            | Например:  
+            span AGH30-0115914
+  section.catalogs.section
+    .container 
+      .title 
+        h2 Поиск модели по каталогу производителя:
+      .catalogs__wrap 
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol a
+            .catalogs__links
+              a.catalog__link(href="#") ABARTH 
+              a.catalog__link(href="#") Alfa Romeo 
+              a.catalog__link(href="#") Audi
+          .catalogs__item 
+            .catalogs__symbol B
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol F
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+              a.catalog__link(href="#") Ford
+              a.catalog__link(href="#") Foton груз-ки
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol K
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol O
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+              a.catalog__link(href="#") Ford
+              a.catalog__link(href="#") Foton груз-ки
+              a.catalog__link(href="#") Foton груз-ки
+              a.catalog__link(href="#") Foton груз-ки
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+

@@ -1,0 +1,32 @@
+/* Main Colors */
+$color-base : #1B1D1F;
+$color-bg : #FAFAFD;
+$color-text : $color-base;
+$color-overlay : $color-base;
+$opacity-overlay: .4;
+$link-color : $color-base;
+
+$gray: #F4F5F7;
+$border: #E3E3E8;
+$purple: #6B59CC;
+
+
+
+
+
+/* Fonts */
+$font-family : 'TT Commons', sans-serif;
+$font-title: $font-family;
+$font-size : 16px;
+$font-weight : normal;
+$letter-spacing : normal;
+$line-height : 1.2;
+$placeholder: #55556D;
+
+
+
+/*container*/
+$container-padding-left: 20px;
+$container-padding-right: 20px;
+$container-width: 1260px + $container-padding-left + $container-padding-right;
+

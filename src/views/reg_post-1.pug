@@ -1,0 +1,66 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.registration
+    .container
+      form.reg_panel
+        .reg__steps
+          .reg__steps-list
+            .reg__steps-item.active
+              .reg__circle 1
+              | Персональная информация
+            .reg__steps-item 
+              .reg__circle 2
+              | Данные компании
+            .reg__steps-item 
+              .reg__circle 3
+              | Данные о поставщике
+            .reg__steps-item 
+              .reg__circle 4
+              | Типы доставки
+            .reg__steps-item 
+              .reg__circle 5
+              | Магазины
+            .reg__steps-item 
+              .reg__circle 6
+              | Информация о прайс-листах
+            .reg__steps-item 
+              .reg__circle 7
+              | Заключительное положение
+        .reg__step
+          .reg__step-body
+            .reg__step-top
+              .title.reg__step-title
+                h2 Персональная информация
+                .reg__step-numbers Шаг 1 из 7
+            .inputs 
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Фамилия
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Имя
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Отчество
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | Телефон
+              .input
+                input(type="text")
+                .input__placeholder 
+                  | E-mail
+          .reg__step-bottom
+            a.reg__step-prev.hidden(href="") 
+              +svgsprite('slider-prev')
+              | Назад
+            a.reg__step-next(href="reg_post-2.html") 
+              | Далее
+              +svgsprite('slider-next')

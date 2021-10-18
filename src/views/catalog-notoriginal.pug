@@ -1,0 +1,159 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.section-top.section
+    .container
+      .title 
+        h1 Каталоги неоригинальных запчастей
+        p В каталоге кузовных запчастей представлены детали для большинства европейских корейских и американских автомобилей, эксплуатируемых в России.
+      .catalog-tags 
+        .title 
+          h2 Популярные марки
+        .tags 
+          +tag('AUDI')
+          +tag('BMW')
+          +tag('CHEVROLET')
+          +tag('CITROEN')
+          +tag('DAEWOO')
+          +tag('FORD')
+          +tag('HONDA')
+          +tag('HYUNDAI')
+          +tag('KIA')
+          +tag('LADA')
+          +tag('LAND ROVER')
+          +tag('LEXUS')
+          +tag('MAZDA')
+          +tag('MERCEDES0BENZ')
+          +tag('MITSUBISHI')
+          +tag('NISSAN')
+          +tag('OPEL')
+          +tag('PEUGEOT')
+          +tag('RENAULT')
+  section.catalogs.section.catalogs--notoriginal
+    .container 
+      .title-search
+        h2 Все марки
+        +search('Начните вводит название')
+      .catalogs__wrap 
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol a
+            .catalogs__links
+              a.catalog__link(href="#") ABARTH 
+              a.catalog__link(href="#") Alfa Romeo 
+              a.catalog__link(href="#") Audi
+          .catalogs__item 
+            .catalogs__symbol B
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol F
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+              a.catalog__link(href="#") Ford
+              a.catalog__link(href="#") Foton груз-ки
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol K
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+        .catalogs__row 
+          .catalogs__item 
+            .catalogs__symbol O
+            .catalogs__links
+              a.catalog__link(href="#") FAW
+              a.catalog__link(href="#") Fiat Professional 
+              a.catalog__link(href="#") Fiat
+              a.catalog__link(href="#") Ford
+              a.catalog__link(href="#") Foton груз-ки
+              a.catalog__link(href="#") Foton груз-ки
+              a.catalog__link(href="#") Foton груз-ки
+          .catalogs__item 
+            .catalogs__symbol G
+            .catalogs__links
+              a.catalog__link(href="#") BMW Motorrad 
+              a.catalog__link(href="#") BMW
+              a.catalog__link(href="#") Baw
+              a.catalog__link(href="#") Buick
+          .catalogs__item 
+            .catalogs__symbol C
+            .catalogs__links
+              a.catalog__link(href="#") Cadillac 
+              a.catalog__link(href="#") Chevrolet
+              a.catalog__link(href="#") Chrysler
+              a.catalog__link(href="#") Citroen
+          .catalogs__item 
+            .catalogs__symbol D
+            .catalogs__links
+              a.catalog__link(href="#") Dacia
+              a.catalog__link(href="#") Daewoo
+              a.catalog__link(href="#") Dodge
+              a.catalog__link(href="#") Dodge
+

@@ -1,0 +1,138 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная';
+  - var bodyClass = '';
+block content
+  section.section-top.section
+    .container 
+      .title 
+        h1 Каталог аккумуляторов
+  section.catalogs.section
+    .container 
+      .cards 
+        .filter 
+          .filter__block
+            .accardeon 
+              .accardeon__main Бренд
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('Bosh', '(1450)')
+                  +checkbox('Varta')
+                  +checkbox('Ac Delco')
+                  +checkbox('Banner')
+                  +checkbox('Berga')
+                button.filter__all Показать все
+          .filter__block
+            .accardeon 
+              .accardeon__main Емкость батареи, А/ч
+              .accardeon__content
+                .filter__inputs 
+                  .filter__input
+                    | от&nbsp;
+                    input(type="text" placeholder="30")
+                  .filter__input
+                    | до&nbsp;
+                    input(type="text" placeholder="430")
+          .filter__block
+            .accardeon 
+              .accardeon__main Клеммы
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('1')
+                  +checkbox('1/3')
+                  +checkbox('21', '(234)')
+                  +checkbox('3 (JIS)')
+                  +checkbox('8')
+                button.filter__all Показать все
+          .filter__block
+            .accardeon 
+              .accardeon__main Крепление аккумулятора 
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('1')
+                  +checkbox('1/3')
+                  +checkbox('21', '(234)')
+                  +checkbox('3 (JIS)')
+                  +checkbox('8')
+                button.filter__all Показать все
+          .filter__block
+            .accardeon 
+              .accardeon__main Напряжение, В
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('1')
+                  +checkbox('1/3')
+          .filter__block
+            .accardeon 
+              .accardeon__main Емкость батареи, А/ч
+              .accardeon__content
+                .filter__inputs 
+                  .filter__input
+                    | от&nbsp;
+                    input(type="text" placeholder="30")
+                  .filter__input
+                    | до&nbsp;
+                    input(type="text" placeholder="430")
+          .filter__block
+            .accardeon 
+              .accardeon__main Расположение полюсных выводов 
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('1')
+                  +checkbox('1/3')
+                  +checkbox('21', '(234)')
+                  +checkbox('3 (JIS)')
+                  +checkbox('8')
+                button.filter__all Показать все
+          .filter__block
+            .accardeon 
+              .accardeon__main Серия
+              .accardeon__content
+                input.filter__search(type="text" placeholder="Быстрый поиск")
+                .filter__checkboxs 
+                  +checkbox('1')
+                  +checkbox('1/3')
+                  +checkbox('21', '(234)')
+                  +checkbox('3 (JIS)')
+                  +checkbox('8')
+                button.filter__all Показать все
+          .filter__block
+            .accardeon 
+              .accardeon__main Ток холодной прокрутки DIN, А
+              .accardeon__content
+                .filter__inputs 
+                  .filter__input
+                    | от&nbsp;
+                    input(type="text" placeholder="30")
+                  .filter__input
+                    | до&nbsp;
+                    input(type="text" placeholder="430")
+          .filter__block
+            .accardeon 
+              .accardeon__main Ток холодной прокрутки EN, А
+              .accardeon__content
+                .filter__inputs 
+                  .filter__input
+                    | от&nbsp;
+                    input(type="text" placeholder="30")
+                  .filter__input
+                    | до&nbsp;
+                    input(type="text" placeholder="430")
+          button.clear__filter Сбросить фильтры
+        .cards__list
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card
+          +card
+          +bloger
+    

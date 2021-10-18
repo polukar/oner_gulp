@@ -1,0 +1,46 @@
+header.header
+  .header__top
+    .container.--flex.--jcsb.--aicn
+      .header__logo
+        button.burger.--visible-mobile
+          +svgsprite('burger')
+        a(href="index.html") 
+          img(src="./assets/img/header/logo.svg", alt="")
+      .header__search.--remove-mobile
+        +search('Введите номер запчасти или VIN')
+      .header__list 
+        a.header__item(href="#") 
+          .header__ico
+            +svgsprite('location')
+          .header__text  Санкт-Петербург
+        a.header__item.--remove-mobile(href="#") 
+          .header__ico
+            +svgsprite('phone')
+          .header__text 
+            b +7 (347) 229-46-45
+        a.header__item.btn-basket.--visible-mobile(href="#") 
+          .header__ico
+            +svgsprite('basket_2')
+          .btn-basket__numbers 5
+        a.header__item(href="#") 
+          .header__ico
+            +svgsprite('user')
+          .header__text Вход  /  Регистрация
+  .header__bottom
+    .container.--flex.--jcsb.--aicn
+      button.all-categories.--open-menu
+        +svgsprite('menu')
+        | Все категории
+      nav.nav.--remove-mobile
+        a.nav__link(href="") Запчасти для ТО
+        a.nav__link(href="") Автомасла
+        a.nav__link(href="catalog.html") Оригинальные запчасти
+        a.nav__link.--remove-tablet(href="") Неоригинальные запчасти
+        a.nav__link.--remove-tablet(href="") Лампочки
+        a.nav__link.--remove-tablet(href="") Аккумуляторы
+      a.btn-basket.--remove-mobile(href="#") 
+        +svgsprite('basket_2')
+        | Корзина
+        .btn-basket__numbers 5
+      .header__search.--visible-mobile
+        +search('Введите номер запчасти или VIN')

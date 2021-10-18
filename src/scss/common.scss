@@ -1,0 +1,41 @@
+// Commons
+@import "variables";
+@import "custom-reset";
+
+// External
+// @import "vendor/jquery.fancybox.css";
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/components/pagination/pagination.scss";
+@import "plugins/nouislider.scss";
+
+// Base
+@import "mixins";
+@import "base";
+@import "generated/svgsprites";
+@import "fonts";
+
+// Base components
+@import "components/base/flex";
+@import "components/base/btn";
+@import "components/base/content";
+@import "components/base/footer";
+@import "components/base/header";
+
+
+// Project components
+@import "components/project/menu";
+@import "components/project/search";
+@import "components/project/count";
+@import "components/project/popups";
+@import "components/project/card";
+@import "components/project/checkbox";
+@import "components/project/accardeon";
+@import "components/project/blogger";
+
+// Project pages
+@import "pages/main";
+@import "pages/catalog";
+@import "pages/catalog-page";
+@import "pages/brand";
+@import "pages/basket";
+@import "pages/registration";

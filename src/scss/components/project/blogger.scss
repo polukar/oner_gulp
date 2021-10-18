@@ -1,0 +1,31 @@
+.bloger{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.bloger__link{
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  transition: .4s;
+  svg{
+    transition: .4s;
+  }
+  &.active,
+  &:hover{
+    background-color: #6B59CC;
+    color: #fff;
+    svg{
+      stroke: #fff;
+    }
+  }
+}

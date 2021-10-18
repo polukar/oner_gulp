@@ -1,0 +1,42 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = '';
+  - var bodyClass = '';
+block content
+  section.section.login
+    .container
+      form.login__panel
+        .login__head Войти
+        .login__body
+          .login__tabs-list
+            .login__tabs-item.active Электронная почта
+            .login__tabs-item Номер телефона
+          .tabs 
+            .tab.active
+              .inputs
+                .input
+                  input(type="text")
+                  .input__placeholder 
+                    | Электронная почта
+                    span *
+                .input
+                  input(type="password")
+                  .input__placeholder 
+                    | Пароль
+                    span *
+                .login__events 
+                  +checkbox('Запомнить меня')
+                  a.login__link Я забыл свой пароль
+                button.sumbit.btn Войти
+            .tab
+              .inputs
+                .input.checked
+                  input.js-mask__tel(type="text")
+                  .input__placeholder 
+                    | Телефон
+                    span *
+                button.sumbit.btn Войти
+        .login__bottom
+          span Нет аккаунта?
+          a(href="#") Зарегистрироваться

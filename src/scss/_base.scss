@@ -1,0 +1,152 @@
+.body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-family;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+  scroll-behavior: smooth;
+  &.bg-white{
+    background: #fff;
+  }
+
+  &.--frozen {
+      overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  padding-left: $container-padding-left; 
+  padding-right: $container-padding-right;
+  margin: 0 auto;
+  position: relative;
+  z-index: 50;
+}
+
+.hidden {
+  display: none;
+}
+
+.content{
+  position: relative;
+  z-index: 10;
+}
+
+.text {
+  p{
+    font-size: 20px;
+    line-height: 140%;
+    & + p{
+      margin-top: 28px;
+    }
+  }
+}
+
+
+a {
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: none;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+::placeholder {
+  color: $placeholder;
+  transition: .4s;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+form{
+  display: block;
+  width: 100%;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+  flex-wrap: wrap;
+  p{
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &.-m-10{
+    margin-bottom: 10px;
+  }
+}
+
+
+
+h1, h2, h3, h4, h5, h6{    
+  font-weight: normal;
+  margin: 0;
+}
+
+
+h1{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  color: #2E1066;
+  .title &{
+    font-size: 28px;
+    line-height: 34px;
+    color: #1B1D1F;
+    span{
+      color: #92979E;
+    }
+  }
+}
+
+h2{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+h4{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media(max-width: 768px){
+  h2{
+    font-size: 20px;
+    line-height: 26px;   
+  }
+  .title{
+    h1{
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+  }
+}
